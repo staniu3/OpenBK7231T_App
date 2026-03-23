@@ -210,6 +210,7 @@
 #elif PLATFORM_BL602
 
 // #define ENABLE_SEND_POSTANDGET				1
+#define ENABLE_DRIVER_BRIDGE 					1
 #define ENABLE_HA_DISCOVERY 					1
 #define ENABLE_MQTT								1
 #define ENABLE_TASMOTADEVICEGROUPS				1
@@ -717,6 +718,8 @@
 #if ENABLE_DRIVER_IRREMOTEESP
 #undef ENABLE_DRIVER_IR
 #endif
+
+//  Enable bridge driver for BL602
 
 // closing OBK_CONFIG_H
 #endif
